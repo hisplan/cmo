@@ -42,7 +42,7 @@ if __name__ =='__main__':
             parser.add_argument(arg, long_arg, action="store_true", default=False, help=help)
         else:
             parser.add_argument(arg, long_arg, action="store", help=help) 
-    parser.add_argument("input_file", help="vcf file")
+    parser.add_argument("input_file", help="bam file")
     parser.add_argument("output_file", help="output file")
 #    parser.add_argument("--genome", required=True, choices=cmo.util.genomes.keys())
     cmo.util.add_logging_options(parser)
